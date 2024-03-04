@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction au Développement Web</title>
@@ -12,6 +14,35 @@
             margin: 20px;
         }
 
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
         h1 {
             color: #007bff;
         }
@@ -19,44 +50,65 @@
         p {
             line-height: 1.6;
         }
+
+        ul, ol {
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
+
 <body>
 
-    <h1>Introduction au Développement Web</h1>
+    <header>
+        <h1>Introduction au Développement Web</h1>
+    </header>
 
-    <p>Le développement web consiste à créer des applications et des sites web accessibles via internet. Cela implique l'utilisation de langages de programmation, de technologies et de normes spécifiques.</p>
+    <nav>
+        <a href="#programming-languages">Langages de programmation</a>
+        <a href="#tools-technologies">Outils et Technologies</a>
+        <a href="#development-process">Processus de Développement</a>
+    </nav>
 
-    <h2>Langages de programmation courants :</h2>
+    <img src="www.jpg" width="800" height="400">
 
-    <ul>
-        <li><strong>HTML (Hypertext Markup Language) :</strong> Utilisé pour structurer le contenu d'une page web.</li>
-        <li><strong>CSS (Cascading Style Sheets) :</strong> Utilisé pour styliser et mettre en forme le contenu HTML.</li>
-        <li><strong>JavaScript :</strong> Langage de programmation côté client permettant d'ajouter des fonctionnalités dynamiques aux pages web.</li>
-        <li><strong>PHP, Python, Ruby :</strong> Langages de programmation côté serveur utilisés pour développer des applications web dynamiques.</li>
-    </ul>
+    <section id="programming-languages">
+        <h2>Langages de programmation courants :</h2>
+        <ul>
+            <li><strong>HTML (Hypertext Markup Language) :</strong> Utilisé pour structurer le contenu d'une page web.</li>
+            <li><strong>CSS (Cascading Style Sheets) :</strong> Utilisé pour styliser et mettre en forme le contenu HTML.</li>
+            <li><strong>JavaScript :</strong> Langage de programmation côté client permettant d'ajouter des fonctionnalités dynamiques aux pages web.</li>
+            <li><strong>PHP, Python, Ruby :</strong> Langages de programmation côté serveur utilisés pour développer des applications web dynamiques.</li>
+        </ul>
+    </section>
 
-    <h2>Outils et Technologies :</h2>
+    <section id="tools-technologies">
+        <h2>Outils et Technologies :</h2>
+        <ul>
+            <li><strong>Editeurs de texte :</strong> Sublime Text, Visual Studio Code, Atom.</li>
+            <li><strong>Systèmes de Gestion de Version :</strong> Git.</li>
+            <li><strong>Frameworks :</strong> React, Angular, Vue.js (pour le développement front-end), Django, Ruby on Rails (pour le développement back-end).</li>
+        </ul>
+    </section>
 
-    <ul>
-        <li><strong>Editeurs de texte :</strong> Sublime Text, Visual Studio Code, Atom.</li>
-        <li><strong>Systèmes de Gestion de Version :</strong> Git.</li>
-        <li><strong>Frameworks :</strong> React, Angular, Vue.js (pour le développement front-end), Django, Ruby on Rails (pour le développement back-end).</li>
-    </ul>
-
-    <h2>Processus de Développement :</h2>
-
-    <ol>
-        <li>Comprendre les besoins et les spécifications du projet.</li>
-        <li>Créer la structure de la page avec HTML.</li>
-        <li>Styliser la page avec CSS pour une présentation attrayante.</li>
-        <li>Ajouter des fonctionnalités dynamiques avec JavaScript.</li>
-        <li>Développer la logique côté serveur avec le langage approprié (PHP, Python, Ruby, etc.).</li>
-        <li>Tester le site sur différents navigateurs et appareils.</li>
-        <li>Déployer le site sur un serveur web pour qu'il soit accessible en ligne.</li>
-    </ol>
+    <section id="development-process">
+        <h2>Processus de Développement :</h2>
+        <ol>
+            <li>Comprendre les besoins et les spécifications du projet.</li>
+            <li>Créer la structure de la page avec HTML.</li>
+            <li>Styliser la page avec CSS pour une présentation attrayante.</li>
+            <li>Ajouter des fonctionnalités dynamiques avec JavaScript.</li>
+            <li>Développer la logique côté serveur avec le langage approprié (PHP, Python, Ruby, etc.).</li>
+            <li>Tester le site sur différents navigateurs et appareils.</li>
+            <li>Déployer le site sur un serveur web pour qu'il soit accessible en ligne.</li>
+        </ol>
+    </section>
 
     <p>Le développement web est un domaine en constante évolution, et les développeurs utilisent une variété d'outils et de technologies pour créer des expériences web modernes et interactives.</p>
 
 </body>
+
 </html>
