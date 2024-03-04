@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-        
+
 <head>
-        
-        <img src="Pythonlogo.jpg" width="1200" height="500">
-        
+    <img src="Pythonlogo.jpg" width="1200" height="500">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction à Python</title>
-    
     <style>
         body {
             background-color: #f0f0f0; /* Couleur de fond */
             font-family: 'Arial', sans-serif;
             color: #333;
             margin: 20px;
+        }
+
+        header {
+            background-color: #007bff; /* Couleur de fond de l'en-tête */
+            color: #fff; /* Couleur du texte de l'en-tête */
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav {
+            background-color: #007bff; /* Couleur de fond de la barre de navigation */
+            color: #fff; /* Couleur du texte de la barre de navigation */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
         }
 
         h1 {
@@ -33,28 +59,40 @@
         }
     </style>
 </head>
+
 <body>
 
-    <h1>Introduction à Python</h1>
+    <header>
+        <h1>Introduction à Python</h1>
+    </header>
 
-    <p>Python est un langage de programmation interprété, orienté objet et de haut niveau. Il est largement utilisé dans le développement web, l'analyse de données, l'intelligence artificielle, et plus encore.</p>
+    <nav>
+        <a href="#basic-functions">Fonctions basiques</a>
+        <a href="#hello-world">Hello, World!</a>
+    </nav>
 
-    <h2>Fonctions basiques de Python :</h2>
+    <img src="Pythonlogo.jpg" width="1200" height="500">
 
-    <ul>
-        <li><code>print()</code> : Affiche du texte ou des variables.</li>
-        <li><code>input()</code> : Obtient une entrée de l'utilisateur.</li>
-        <li><code>len()</code> : Retourne la longueur d'une séquence (liste, chaîne, etc.).</li>
-        <li><code>range()</code> : Génère une séquence de nombres.</li>
-        <li><code>def</code> : Définit une fonction.</li>
-        <li><code>return</code> : Renvoie une valeur depuis une fonction.</li>
-    </ul>
+    <section id="basic-functions">
+        <h2>Fonctions basiques de Python :</h2>
+        <ul>
+            <li><code>print()</code> : Affiche du texte ou des variables.</li>
+            <li><code>input()</code> : Obtient une entrée de l'utilisateur.</li>
+            <li><code>len()</code> : Retourne la longueur d'une séquence (liste, chaîne, etc.).</li>
+            <li><code>range()</code> : Génère une séquence de nombres.</li>
+            <li><code>def</code> : Définit une fonction.</li>
+            <li><code>return</code> : Renvoie une valeur depuis une fonction.</li>
+        </ul>
+    </section>
 
-    <p>Pour afficher "Hello, World!" en Python :</p>
-
-    <code>
-        print("Hello, World!")
-    </code>
+    <section id="hello-world">
+        <h2>Exemple : Hello, World! en Python</h2>
+        <p>Pour afficher "Hello, World!" en Python :</p>
+        <code>
+            print("Hello, World!")
+        </code>
+    </section>
 
 </body>
+
 </html>
