@@ -34,26 +34,102 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Added styles from the first code */
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 10px 0;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>Ma petite page Web en SNT</h1>
+    <header>
+        <h1>Ma petite page Web en SNT</h1>
+    </header>
 
-    <h2>Ce que j'ai fait dans l'année</h2>
-    
-    <p>Bonjour, voici ma page web de SNT :</p>
-    
-    <p>Chapitre #1: Python </p>
-    <a href="https://danifrontrowncs.github.io/Python" target="_blank">Python</a> 
-    
-    <p>Chapitre #2: Internet </p>
-    <a href="https://danifrontrowncs.github.io/Internet" target="_blank">Internet</a> 
-    
-    <p>Chapitre #3: Le Web </p>
-    <a href="https://danifrontrowncs.github.io/Le Web" target="_blank">Le Web</a> 
+    <nav>
+        <a href="#python">Python</a>
+        <a href="#internet">Internet</a>
+        <a href="#le-web">Le Web</a>
+        <a href="#ma-petite-page-web">Ma petite page web</a>
+    </nav>
 
-    <p>Ma petite page web </p>
-    <a href="https://danifrontrowncs.github.io/Ma petite page web" target="_blank">Ma petite page web</a> 
+    <section id="python">
+        <h2>Chapitre #1: Python</h2>
+        <a href="https://danifrontrowncs.github.io/Python" target="_blank">Python</a> 
+    </section>
 
+    <section id="internet">
+        <h2>Chapitre #2: Internet</h2>
+        <a href="https://danifrontrowncs.github.io/Internet" target="_blank">Internet</a> 
+    </section>
+
+    <section id="le-web">
+        <h2>Chapitre #3: Le Web</h2>
+        <a href="https://danifrontrowncs.github.io/Le Web" target="_blank">Le Web</a> 
+    </section>
+
+    <section id="ma-petite-page-web">
+        <h2>Ma petite page web</h2>
+        <a href="https://danifrontrowncs.github.io/Ma petite page web" target="_blank">Ma petite page web</a> 
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ma petite page Web en SNT</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
